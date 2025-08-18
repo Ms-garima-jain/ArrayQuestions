@@ -1,0 +1,11 @@
+Print all even numbers in an array.
+//  Print all even numbers in an array.
+
+ const evenno =[1, 2,3,4, 5, 6]
+   for (let i =0; i<evenno.length; i++)
+   {
+     if (evenno[i]%2==0)
+     {
+         console.log (evenno[i])
+     }
+   }
