@@ -1,0 +1,46 @@
+let arr = [5,2,9,4,11,6,28,17];
+ let even=[]
+ let odd=[]
+ let evenindex=0;
+ let oddindex=0
+  for (let i =1; i<arr.length; i++)
+  {
+      if (arr[i]%2==0)
+      {
+          even[evenindex]=arr[i]
+          evenindex++
+      }
+      else
+      {
+          odd[oddindex]=arr[i]
+          oddindex++
+      }
+  }
+   for (let i=0; i<even.length; i++)
+   {
+        for (let j =0; j<even.length-1; j++)
+        {
+            if (even [j]> even [j+1])
+            {
+                let temp = even[j]
+                even[j]=even[j+1]
+                even[j+1]=temp
+            }
+        }
+   }
+   for (let i=0; i<odd.length; i++)
+   {
+        for (let j =0; j<odd.length-1; j++)
+        {
+            if (odd [j]<odd[j+1])
+            {
+                let temp = odd[j]
+                odd[j]=odd[j+1]
+                odd[j+1]=temp
+            }
+        }
+   }
+
+console.log (even)
+     console.log (odd)
+  
